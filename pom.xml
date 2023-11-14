@@ -15,7 +15,7 @@
   </properties>
 
   <dependencies>
-    <!-- JUnit 5 -->
+    <!-- SLF4J -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
@@ -49,18 +49,19 @@
       <version>1.18.22</version>
       <scope>provided</scope>
     </dependency>
+
+    <!-- Mockito -->
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.18.22</version>
-      <scope>compile</scope>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
     </dependency>
-    <!-- Dodaj te dwie linie zależności -->
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.18.22</version>
-      <scope>annotationProcessor</scope>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 

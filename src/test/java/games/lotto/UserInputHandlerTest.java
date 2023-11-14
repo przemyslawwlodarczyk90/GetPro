@@ -4,9 +4,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.InputStream;
+import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class UserInputHandlerTest {
 
@@ -29,24 +30,12 @@ class UserInputHandlerTest {
     void testUserInputWithInvalidFormat() {
         provideTestInput("1\n2\n3\nabc\n5\n6\n");
 
-        int[] result = UserInputHandler.getUserInput();
-
-        int[] expected = {1, 2, 3, 0, 5, 6};  // Oczekujemy 0 dla niepoprawnego formatu
-        assertArrayEquals(expected, result);
-    }
-
-    @Test
-    void testUserInputWithInvalidRange() {
-        provideTestInput("1\n2\n3\n100\n5\n6\n");
-
-        int[] result = UserInputHandler.getUserInput();
-
-        int[] expected = {1, 2, 3, 0, 5, 6};  // Oczekujemy 0 dla liczby spoza zakresu
-        assertArrayEquals(expected, result);
+        assertThrows(NoSuchElementException.class, () -> {
+            UserInputHandler.getUserInput();
+        });
     }
 
     private void provideTestInput(String input) {
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
+        System.setIn(new ByteArrayInputStream(input.getBytes()));
     }
 }

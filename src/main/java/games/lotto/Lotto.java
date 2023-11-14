@@ -1,11 +1,11 @@
 package games.lotto;
 
 import games.Minigame;
-import lombok.AllArgsConstructor;
+
 
 import java.util.Arrays;
 
-@AllArgsConstructor
+
 public class Lotto implements Minigame {
     public void play() {
         System.out.println("Witaj w grze Lotek!");
