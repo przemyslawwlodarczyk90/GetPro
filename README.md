@@ -1,26 +1,54 @@
-# GetPro# GetPro "Mini Games Collection"
+# 🎮 GetPro - Kolekcja Mini Gier Konsolowych 🕹️
 
-## Opis
-Projekt zawiera kolekcję mini gier konsolowych w Javie. Użytkownicy mogą wybrać spośród kilku gier, takich jak "Zgadnij liczbę", "Lotto" oraz "Papier, kamień, nożyce". Każda gra oferuje unikalne wyzwanie i sposób interakcji.
+GetPro to zestaw mini gier stworzony w Javie, uruchamianych w konsoli. Użytkownik może wybrać jedną z dostępnych gier i spróbować swoich sił w klasycznych zabawach znanych z dzieciństwa!
 
-## Gry
-- **Zgadnij liczbę**: Gra polegająca na odgadywaniu wylosowanej liczby.
-- **Lotto**: Symulacja gry w Lotto, gdzie gracz wybiera zestaw liczb.
-- **Papier, kamień, nożyce**: Klasyczna gra w papier, kamień, nożyce przeciwko komputerowi.
+---
 
-## Jak zacząć
-Aby uruchomić gry, potrzebujesz środowiska Java zainstalowanego na swoim komputerze. Sklonuj repozytorium i uruchom plik `App.java` w swoim IDE lub z linii poleceń.
+## 🕹️ Dostępne gry
 
-## Wymagania
-- Java 8 lub nowsza.
+- 🔢 **Zgadnij liczbę** – odgadnij wylosowaną liczbę w jak najmniejszej liczbie prób!
+- 🎰 **Lotto** – symulacja popularnej gry liczbowej, wybierz swoje liczby i sprawdź szczęście.
+- ✊ ✋ ✌️ **Papier, kamień, nożyce** – zmierz się z komputerem w klasycznej rozgrywce.
 
-## Uruchomienie gry
-Otwórz terminal w folderze projektu i wykonaj poniższe polecenia:
+---
+
+## 🧰 Jak zacząć
+
+Aby uruchomić gry:
+
+1. Upewnij się, że masz zainstalowaną **Javę 8 lub nowszą**.
+2. Sklonuj repozytorium na swój komputer.
+3. Uruchom klasę `App.java` w swoim IDE lub za pomocą terminala.
+
+---
+
+## 🚀 Uruchomienie z terminala
+
+```bash
 javac App.java
 java App
+```
 
-## Rozwój
-Projekt jest otwarty na współpracę. Możesz forkować repozytorium, wprowadzać zmiany i tworzyć pull requesty.
+---
 
-## Licencja
-Projekt jest udostępniony na licencji MIT.
+## 🤝 Rozwój projektu
+
+Chcesz coś dodać lub ulepszyć? Super!
+
+- Forkuj repozytorium 🔁
+- Wprowadź zmiany ✍️
+- Złóż pull request 📬
+
+Projekt chętnie przyjmie nowe pomysły na gry, refaktoryzacje i usprawnienia UX.
+
+---
+
+## 📄 Licencja
+
+Ten projekt jest dostępny na licencji **MIT** – możesz z niego korzystać, modyfikować go i dzielić się dalej, zarówno prywatnie, jak i komercyjnie.
+
+---
+
+🎉 Miłej zabawy!
+
+**GetPro Dev** 🎮
